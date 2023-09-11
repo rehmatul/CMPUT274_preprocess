@@ -1,0 +1,46 @@
+#--------------------------------------------
+#   Name: Fatima Rehmatullah
+#   ID: 1631703
+#   CMPUT 274, Fall 2020
+#
+#   Weekly Exercise #4: Text Preprocessor
+#--------------------------------------------
+
+   Files included:
+1) preprocess.py
+2) README
+
+   Notes: 
+
+The file preprocess.py contains six functions "fullpreprocessing", "modeanderrorhandling","lowercase", "punctuation", "numbers" and "stopwords".
+
+*  The fullpreprocessing function inputs a line of space seperated words from the user and saves them as a list. Prints an output list will all elements in lowercase, no stop words, no punctuation and no digits(unless the word is completely made of digits). 
+
+*  The modeanderrorhandling function checks the mode given as an argument in the command line and performs specific types of word processing depending on the user requirement. Also outputs error message for incorrect mode or too many arguments.
+
+* The lowercase function converts all list elements to lowercase and also checks if the input is empty. Returns the processed list
+
+* THe punctuation function takes a list parameter and removes all special characters from the list.Returns the processed list
+
+* The numbers function takes a list parameter and removes all digits from the list. If the word is entirely made of digits, it is reinputted in the list again. Returns the processed list
+
+* The stopwords function removes all words from the list which are also found in the given stopwords list. Returns the processed list
+
+
+*The python file gives an error message if the input is empty. 
+
+  Assumptions:
+
+* The input is a line of words seperated by white spaces and the input ends on pressing enter in the command line
+* The input is always a single line.
+
+
+  Running Instructions:
+
+* Open a terminal window 
+* Use the following format to run the python file
+"python3 freq.py <mode>" where the mode can be <keep-symbols>,<keep-digits> or <keep-stops>  
+* If there are extra arguments or if the mode is incorrect, the code alerts the user by giving an error message on the console. It also provides help to make them aware of the format. The program also quits immediately.
+* In case no mode is given, full preprocessing is done on the input
+* After running successfully the code outputs the processed string on the console.
+
